@@ -10,15 +10,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-        crossorigin="anonymous" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/portfolio.min.css">
 </head>
 
 <body>
     <!-- Header portfolio -->
-    <header class="header-portfolio">
+    <header>
         <!-- Navigation -->
         <div class="container header-top">
             <nav class="main-nav">
@@ -32,14 +29,15 @@
                 </ul>
             </nav>
             <!-- Contacts Email tel Top -->
-            <ul class="contacts-top list">
+            <ul class="contacts-top-list list">
                 <li class="item">
-                    <a href="maito:info@devstudio.com" class="top-items link"> <svg class="icon-top-contacts">
+                    <a href="maito:info@devstudio.com" class="contacts-top-link link">
+                        <svg class="icon-top-contacts">
                             <use href="./images/svg/sprite.svg#letter"></use>
                         </svg> info@devstudio.com</a>
                 </li>
                 <li class="item">
-                    <a href="tel:+380961111111" class="top-items link"> <svg class="icon-top-contacts">
+                    <a href="tel:+380961111111" class="contacts-top-link link"> <svg class="icon-top-contacts">
                             <use href="./images/svg/sprite.svg#tel"></use>
                         </svg>+38 096 111 11 11</a>
                 </li>
@@ -50,12 +48,12 @@
     <main>
         <!-- <h1 class="title-portfolio">Все работы студии</h1> -->
         <div>
-            <ul class="list container btn-flex">
-                <li class="item"><button type="button" class="btn-portfolio">Все</button></li>
-                <li class="item"><button type="button" class="btn-portfolio">Веб-сайты</button></li>
-                <li class="item"><button type="button" class="btn-portfolio">Приложения</button></li>
-                <li class="item"><button type="button" class="btn-portfolio">Дизайн</button></li>
-                <li class="item"><button type="button" class="btn-portfolio">Маркетинг</button></li>
+            <ul class="list container btn-list">
+                <li class="item"><button type="button" class="btn-portfolio button">Все</button></li>
+                <li class="item"><button type="button" class="btn-portfolio button">Веб-сайты</button></li>
+                <li class="item"><button type="button" class="btn-portfolio button">Приложения</button></li>
+                <li class="item"><button type="button" class="btn-portfolio button">Дизайн</button></li>
+                <li class="item"><button type="button" class="btn-portfolio button">Маркетинг</button></li>
             </ul>
         </div>
         <section>
@@ -257,7 +255,7 @@
                 <h2 class="title-footer-social">Подпишитесь на рассылку</h2>
                 <form action="#" class="footer-form-section-input">
                     <input type="email" name="user-email" class="footer-form-input" placeholder="E-mail">
-                    <button type="button" class="footer-input-img-tw">Подписаться
+                    <button type="button" class="footer-input-img-tw button">Подписаться
                         <svg width="24" height="24" class="footer-input-tw">
                             <use href="./images/svg/sprite.svg#twitter-send"></use>
                         </svg>

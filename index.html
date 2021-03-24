@@ -8,10 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-        crossorigin="anonymous" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <!-- Header -->
@@ -29,14 +26,15 @@
             </ul>
         </nav>
         <!-- Contacts Email tel Top -->
-        <ul class="contacts-top list">
+        <ul class="contacts-top-list list">
             <li class="item">
-                <a href="maito:info@devstudio.com" class="top-items link"> <svg class="icon-top-contacts">
+                <a href="maito:info@devstudio.com" class="contacts-top-link link"> 
+                <svg class="icon-top-contacts">
                     <use href="./images/svg/sprite.svg#letter"></use>
                 </svg> info@devstudio.com</a>
             </li>
             <li class="item">
-                <a href="tel:+380961111111" class="top-items link"> <svg class="icon-top-contacts">
+                <a href="tel:+380961111111" class="contacts-top-link link"> <svg class="icon-top-contacts">
                     <use href="./images/svg/sprite.svg#tel"></use>
                 </svg>+38 096 111 11 11</a>
             </li>
@@ -49,56 +47,56 @@
         <section>
             <div class="banner-section">
                 <h1 class="banner-title">Эффективные решения <br> для вашего бизнеса</h1>
-                <button type="button" class="btn-studio" data-modal-open>Заказать услугу</button>
+                <button type="button" class="button-studio button" data-modal-open>Заказать услугу</button>
             </div> 
         </section>
         <!-- Engage section -->
         <section>
             <div class="container section-container">
-                <ul class="list engage-section">
+                <ul class="list engage">
                     <li class="item">
-                        <div class="engage-icon-section">
+                        <div class="engage-section-icon">
                             <svg class="engage-vector-icon">
                                 <use href="./images/svg/sprite.svg#antenna"></use>
                             </svg>
                         </div> 
-                        <h3 class="title-engage">Внимание к деталям</h3>
+                        <h3 class="engage-title">Внимание к деталям</h3>
                         <p class="engage-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
                     <li class="item">
-                        <div class="engage-icon-section">
+                        <div class="engage-section-icon">
                             <svg class="engage-vector-icon">
                                 <use href="./images/svg/sprite.svg#clock"></use>
                             </svg>
                         </div> 
-                        <h3 class="title-engage">Пунктуальность</h3>
+                        <h3 class="engage-title">Пунктуальность</h3>
                         <p class="engage-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
                     <li class="item">
-                        <div class="engage-icon-section">
+                        <div class="engage-section-icon">
                             <svg class="engage-vector-icon">
                                 <use href="./images/svg/sprite.svg#diagram"></use>
                             </svg>
                         </div> 
-                        <h3 class="title-engage">Планирование</h3>
+                        <h3 class="engage-title">Планирование</h3>
                         <p class="engage-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
                     <li class="item">
-                        <div class="engage-icon-section">
+                        <div class="engage-section-icon">
                             <svg class="engage-vector-icon">
                                 <use href="./images/svg/sprite.svg#astronaut"></use>
                             </svg>
                         </div> 
-                        <h3 class="title-engage">Современные технологии</h3>
+                        <h3 class="engage-title">Современные технологии</h3>
                         <p class="engage-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
                 </ul>
             </div>
         </section>
-        <!-- Image title -->
+        <!-- Window Image section -->
         <section>
            <div class="container section-container">
-                <h2 class="collecting-title">Чем мы занимаемся</h2>
+                <h2 class="title">Чем мы занимаемся</h2>
                 <ul class="list container img-item">
                     <li class="item img-item-window">
                         <img width="370" height="294" src="./images/prints.jpg" alt="prints">
@@ -124,7 +122,7 @@
         <!-- Our team -->
         <section class="our-squad">
             <div class="container section-container">
-                <h2 class="collecting-title">Наша команда</h2>
+                <h2 class="title">Наша команда</h2>
                 <ul class="list container our-team">
                     <li class="item">
                         <img width="270" height="260" src="./images/igor-demianenko.jpg" alt="Игорь Демьяненко">
@@ -277,9 +275,10 @@
                 </ul>
             </div>
         </section>
+        <!-- Regular client section -->
         <section>
             <div class="container section-container">
-                <h2 class="collecting-title">Постоянные клиенты</h2>
+                <h2 class="title">Постоянные клиенты</h2>
                 <ul class="list regular-client">
                     <li class="regular-client-item">
                         <a href="" class="link regular-client-link">
@@ -329,18 +328,18 @@
     </main>
     <!-- Footer -->
     <footer class="footer">
-        <div class="container footer-container-adress">
+        <div class="container footer-address-container">
             <div>
                 <!-- Logo -->
                 <a href="./index.html" class="logo link"><span class="logo-blue">Web</span><span class="logo-white">Studio</span></a>
                 <address>
-                    <p class="footer-address">г. Киев, пр-т Леси Украинки, 26</p>
-                    <ul class="contact-bottom list">
+                    <p class="footer-address-text">г. Киев, пр-т Леси Украинки, 26</p>
+                    <ul class="footer-address-list list">
                         <li class="item">
-                            <a href="maito:info@example.com" class="bottom-item link">info@example.com</a>
+                            <a href="maito:info@example.com" class="footer-address-link link">info@example.com</a>
                         </li>
                         <li class="item">
-                            <a href="tel:+380961111111" class="bottom-item link">+38 096 111 11 11</a>
+                            <a href="tel:+380961111111" class="footer-address-link link">+38 096 111 11 11</a>
                         </li>
                     </ul>
                 </address>
@@ -382,7 +381,7 @@
                 <h2 class="title-footer-social">Подпишитесь на рассылку</h2>
                 <form action="#" class="footer-form-section-input">
                     <input type="email" name="user-email" class="footer-form-input" placeholder="E-mail">
-                    <button type="button" class="footer-input-img-tw">Подписаться
+                    <button type="button" class="footer-input-img-tw button">Подписаться
                         <svg width="24" height="24" class="footer-input-tw">
                             <use href="./images/svg/sprite.svg#twitter-send"></use>
                         </svg>
@@ -433,8 +432,8 @@
                     <textarea name="feedback" placeholder="Введите текст" class="modal-form-message"></textarea>
                 </label>                
                 <input id="user-term" type="checkbox" name="terms-agreement" class="modal-form-term visually-hidden"/>
-                <label for="user-term" class="modal-form-term-desc">Соглашаюсь с рассылкой и принимаю <a href="" class="modal-form-term-desc-link">Условия договора</a></label>
-                <button type="submit" class="modal-btn-submit">Отправить</button>
+                <label for="user-term" class="modal-form-term-desc">Соглашаюсь с рассылкой и принимаю<a href="" class="modal-form-term-desc-link">Условия договора</a></label>
+                <button type="submit" class="modal-btn-submit button">Отправить</button>
             </form>
         </div>        
     </div>
